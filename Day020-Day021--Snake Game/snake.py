@@ -26,6 +26,7 @@ class Snake:
         self.segments.append(new_segment)
 
     def extend(self):
+        """to increase body size of snake"""
         self.add_segment(self.segments[-1].position())
 
     def move(self):
