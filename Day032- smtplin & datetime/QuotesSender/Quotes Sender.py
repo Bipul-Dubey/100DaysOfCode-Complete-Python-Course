@@ -6,14 +6,15 @@ current=dt.datetime.now()
 weekday=current.weekday()
 # week day start from monday=0
 
-sender_email="smtpcheck9@gmail.com"
-sender_password="Smtp@1111"
-receiver_email="raj12kumar21@yahoo.com"
+sender_email=""
+sender_password=""
+receiver_email=""
 
 if weekday==3:
     with open("quotes.txt") as quotes_file:
         all_quotes=quotes_file.readlines()
         quote=random.choice(all_quotes)
+    # enter mail service provide in SMTP()
     with smtplib.SMTP("smtp.gmail.com",port=587) as connection:
         connection.starttls()
         connection.login(user=sender_email,password=sender_password)

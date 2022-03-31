@@ -3,9 +3,9 @@ import smtplib
 import pandas
 import datetime as dt
 
-sender_email="smtpcheck9@gmail.com"
-sender_password="Smtp@1111"
-receiver_email="raj12kumar21@yahoo.com"
+sender_email=""
+sender_password=""
+receiver_email=""
 
 today=dt.datetime.now()
 today_tuple=(today.month,today.day)
@@ -20,7 +20,7 @@ if today_tuple in birthday_dict:
         content=letter_file.read()
         content=content.replace("[NAME]",birthday_person["name"])
 
-
+    # enter mail service provide in SMTP()
     with smtplib.SMTP("smtp.gmail.com",port=587) as connection:
         connection.starttls()
         connection.login(user=sender_email, password=sender_password)
