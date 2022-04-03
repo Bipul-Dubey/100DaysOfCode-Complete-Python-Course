@@ -26,7 +26,6 @@ if will_rain:
     weather="Rainy Day"
 else:
     weather="Sunny Day"
-print(weather)
 
 import smtplib
 
