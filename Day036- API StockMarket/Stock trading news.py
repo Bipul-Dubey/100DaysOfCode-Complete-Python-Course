@@ -6,8 +6,8 @@ Compandy_Name="Tesla Inc"
 
 Stock_Endpoint="https://www.alphavantage.co/query"
 News_Endpoint="https://newsapi.org/v2/everything"
-Stock_Api_key="3UGC2S36F89D3KRK"
-News_Api_Key="2ae25b4272704d19a12c1e96fd52b846"
+Stock_Api_key=""
+News_Api_Key=""
 
 stock_params={
     "function":"TIME_SERIES_DAILY",
@@ -20,9 +20,9 @@ news_params={
     "qinTitle":Compandy_Name
 }
 
-sender_email="smtpcheck9@gmail.com"
-sender_pass="Smtp@1111"
-receiver_email="raj12kumar21@yahoo.com"
+sender_email=""
+sender_pass=""
+receiver_email=""
 
 response=requests.get(url=Stock_Endpoint,params=stock_params)
 response.raise_for_status()
