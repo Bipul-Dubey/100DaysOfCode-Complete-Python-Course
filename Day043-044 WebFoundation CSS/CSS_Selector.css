@@ -1,0 +1,24 @@
+/* -------------------Tag selector------------------- */
+h1{
+  color: blue;
+  font-size:50px;
+}
+
+img:hover{
+  background-color:gold;
+}
+
+/* -------------------class selector------------------- */
+.car1{
+  background-color:green;
+}
+.car2{
+  background-color:blue;
+}
+.circular{
+  border-radius:100%;
+}
+/* -------------------Id Selector-------------------- */
+#heading{
+  color:red;
+}
