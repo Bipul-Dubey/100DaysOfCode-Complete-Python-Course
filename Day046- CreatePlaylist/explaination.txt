@@ -1,0 +1,3 @@
+This program is about web scraping
+it takes data (song name) from billboard 100
+and create a playlist of that day with songs
