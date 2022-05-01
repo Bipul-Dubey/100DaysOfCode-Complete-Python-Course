@@ -1,0 +1,159 @@
+/*
+font-family: 'Montserrat', sans-serif;
+
+font-family: 'PT Sans', sans-serif;
+
+font-family: 'Source Sans Pro', sans-serif;
+
+font-family: 'Ubuntu', sans-serif;
+ */
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+#title{
+  background-color: #ff4c68;
+}
+
+.container{
+  padding: 3% 15% 23%;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+h3{
+  font-family: 'PT Sans', sans-serif;
+  line-height: 1.5;
+}
+p{
+  color: #8f8f8f;
+}
+.cta-heading{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* navbar */
+
+.brand-name{
+  padding-left: 7px;
+  padding-top: 0.3125rem;
+  padding-bottom: 1rem;
+  margin-right: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+}
+
+.brand-name:hover{
+  color: rgb(231, 238, 239);
+}
+
+.nav-item{
+  padding: 0 18px;
+}
+
+.nav-link{
+  font-size: 1.2rem;
+}
+
+.down-btn{
+  margin: 4% 2% 4% 0;
+}
+
+.title-img{
+  transform: rotate(20deg);
+  position: absolute;
+}
+
+#features{
+  padding: 5% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-box{
+  text-align: center;
+  padding: 10%;
+}
+
+.icon{
+  color: #ef8172;
+  padding-bottom: 1rem;
+}
+.icon:hover{
+  color: #ff4c68;
+}
+
+#testimonials{
+  padding: 7% 15%;
+  text-align: center;
+  background-color: #ef8172;
+  color: #fff;
+}
+
+.testimonial-img{
+  width: 15%;
+  border-radius: 100px;
+  margin-right:   20px;
+}
+.carousel-item{
+  padding: 7% 15%;
+}
+
+#press{
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.press-logo{
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+#pricing{
+  text-align: center;
+  padding: 100px;
+}
+
+.price-col{
+  padding: 3%
+}
+
+@media (max-width:995px) {
+  #title{
+    text-align: center;
+  }
+  .title-img{
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+#cta{
+  background-color: #ff4c68;
+  text-align: center;
+  padding: 7% 15%;
+  color: #fff;
+}
+#footer{
+  background-color: #fff;
+  padding: 4%;
+  text-align: center;
+}
+
+.social-logo{
+  padding: 3%;
+}
+
+.media-logo{
+  padding: 0 5px;
+}
