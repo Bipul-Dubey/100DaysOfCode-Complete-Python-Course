@@ -2,10 +2,10 @@ from flask import Flask, render_template, request
 import requests
 import smtplib
 
-data=requests.get("https://api.npoint.io/c790b4d5cab58020d391").json()
+# data=requests.get("https://api.npoint.io/c790b4d5cab58020d391").json()
 
 # example data in api
-"""
+
 data=[
   {
     "id": 1,
@@ -16,7 +16,6 @@ data=[
     "date": "21 sept 2022"
   }
 ]
-"""
 
 app=Flask(__name__)
 
@@ -41,9 +40,9 @@ def about():
     return render_template("about.html")
 
 
-SENDER_MAIL="smtpcheck9@gmail.com"
-SENDER_PASSWORD="Smtp@1111"
-RECEIVER_EMAIL="raj12kumar21@yahoo.com"
+SENDER_MAIL=""
+SENDER_PASSWORD=""
+RECEIVER_EMAIL=""
 
 
 def sendmail(name,email,phone,msg):
