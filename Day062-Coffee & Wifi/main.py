@@ -17,7 +17,7 @@ class CafeForm(FlaskForm):
     close_time=StringField('Close Time (e.g 9PM)')
     coffee_rating=SelectField('Coffee Rating',default='☕',choices=[('☕'),('☕☕'),('☕☕☕'),('☕☕☕☕'),('☕☕☕☕☕')])
     wifi=SelectField('WiFi Strength Rating',default='✘',choices=[('✘'),('💪'),('💪💪'),('💪💪💪'),('💪💪💪💪'),('💪💪💪💪💪')])
-    socket=SelectField('Socket Availability',default='✘',choices=[('✘'),('🔌'),('🔌🔌'),('🔌🔌🔌'),('🔌🔌🔌🔌'),('🔌🔌🔌🔌')])
+    socket=SelectField('Socket Availability',default='✘',choices=[('✘'),('🔌'),('🔌🔌'),('🔌🔌🔌'),('🔌🔌🔌🔌'),('🔌🔌🔌🔌🔌')])
     submit = SubmitField('Submit')
 
 # Exercise:
