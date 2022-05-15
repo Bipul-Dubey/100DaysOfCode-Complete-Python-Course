@@ -22,7 +22,7 @@ app=Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template("index.html",all_post=data)
+    return render_template("signup.html",all_post=data)
 
 
 @app.route('/<int:index>')

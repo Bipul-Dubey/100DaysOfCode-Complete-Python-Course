@@ -10,7 +10,7 @@ app=Flask(__name__)
 def home():
     curr_year=date.today().year
     ran_num=random.randint(0,9)
-    return render_template('index.html',num=ran_num,current_year=curr_year)
+    return render_template('signup.html',num=ran_num,current_year=curr_year)
 
 
 @app.route('/guess/<name>')
