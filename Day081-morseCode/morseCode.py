@@ -24,3 +24,29 @@ def text_to_morse_code(message):
             morse+=' '
     return morse
 
+
+def morse_code_to_text(morse):
+    morse+=' '
+    text=''
+    demorse=''
+    i=0
+    for letter in morse:
+        if letter!=' ':
+            i=0
+            text+=letter
+        else:
+            i+=1
+            if i>=2:
+                demorse+=' '
+            else:
+                demorse+=list(MORSE_CODE_DICT.keys())[list(MORSE_CODE_DICT.values()).index(text)]
+                text=''
+    return demorse
+
+
+morsecode=text_to_morse_code("AB XY MN     ZYX")
+
+print(morse_code_to_text(morsecode))
+
+
+
