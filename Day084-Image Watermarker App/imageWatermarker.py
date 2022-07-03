@@ -25,6 +25,7 @@ class WaterMaker:
     def __init__(self):
         self.real_img=Image
         self.img=Image
+        self.i=0
 
     def show_image(self):
         fln=filedialog.askopenfilename(initialdir=os.getcwd(),title='Select Image File',filetypes=(('JPG File','*.jpg'),
@@ -56,7 +57,8 @@ class WaterMaker:
         lbl.image=img2
 
     def save_image(self):
-        self.img.save('watermarker.jpg')
+        self.i+=1
+        self.img.save(f'watermarker{self.i}.jpg')
 
 
 watermark_lbl=Label(text='Enter WaterMark Text: ',font=('BOLD',10))
