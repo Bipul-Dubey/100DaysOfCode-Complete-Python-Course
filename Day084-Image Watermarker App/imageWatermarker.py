@@ -20,8 +20,7 @@ frn.grid(row=2,column=1)
 lbl=Label(frn,text='Image Here ',font=('BOLD',40))
 lbl.grid(row=2,column=1)
 
-global i
-demo_img=Image
+
 def open_image():
     fln=filedialog.askopenfilename(initialdir=os.getcwd(),title='Select Image File',filetypes=(('JPG File','*.jpg'),
                                                                                                ('PNG File','*.png')))
@@ -31,8 +30,6 @@ def open_image():
 
 
 def add_watermark():
-    i=0
-    i+=1
     img=open_image()
     img_width,img_height=img.size
 
@@ -41,7 +38,7 @@ def add_watermark():
     if watermark_text.get()!='':
         text_image=watermark_text.get()
 
-    text_width, text_height = draw_img.textsize(text_image)
+    text_width,text_height=draw_img.textsize(text_image)
 
     font_margin = 10
     x = img_width - text_width - font_margin
