@@ -32,7 +32,8 @@ def home():
     if request.method == "POST":
         text = request.form.get("word")
         translated=translate(text)
-    return render_template('index.html',word=text,hindi=translated[0],definition=translated[1])
+        return render_template('index.html', word=text, hindi=translated[0], definition=translated[1])
+    return render_template('index.html')
 
 
 if __name__=='__main__':
