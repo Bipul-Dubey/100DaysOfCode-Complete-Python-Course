@@ -9,17 +9,18 @@ def hit(key):
 
 
 def is_collide(data):
+    # Draw the rectangle for birds
+    for i in range(710, 810):
+        for j in range(175, 255):
+            if data[i, j] < 171:
+                hit("down")
+                return
+
     # Draw the rectangle for cactus
     for i in range(710, 800):
         for j in range(275, 300):
-            if data[i, j] < 100:
+            if data[i, j] < 200:
                 hit("up")
-                return
-    # Draw the rectangle for birds
-    for i in range(710, 800):
-        for j in range(150, 275):
-            if data[i, j] < 100:
-                hit("down")
                 return
     return
 
@@ -35,12 +36,12 @@ if __name__ == "__main__":
         is_collide(data)
         # Draw the rectangle for cactus
         # for i in range(710,800):
-        #     for j in range(270, 300):
-        #         data[i, j] = 0
+        #     for j in range(257, 300):
+        #         data[i, j] = 200
         #
         # # Draw the rectangle for birds
-        # for i in range(710, 800):
-        #     for j in range(150, 265):
+        # for i in range(710, 810):
+        #     for j in range(175, 255):
         #         data[i, j] = 171
         #
         # image.show()
